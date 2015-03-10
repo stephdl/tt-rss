@@ -1,0 +1,6 @@
+git clone https://github.com/gothfox/Tiny-Tiny-RSS.git Tiny-Tiny-RSS-1.15.3
+rm Tiny-Tiny-RSS-1.15.3/.git -rf
+tar cvzf tt-rss-1.15.3.tar.gz Tiny-Tiny-RSS-1.15.3
+
+apres il faut importer le tar dans le dossier source de rpmbuild 
+puis construire le rpm par la commande rpmbuild -ba tt-rss.spec
