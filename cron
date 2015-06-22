@@ -1,0 +1,3 @@
+#!/bin/sh
+HOME=__ROOT_DIR__
+* * * * * __APACHE__ [ -f __ROOT_DIR__/update.php ] && /usr/bin/php __ROOT_DIR__/update.php -feeds > __LOG_FILE__ 2>&1
