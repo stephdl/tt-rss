@@ -1,5 +1,5 @@
 %define name tt-rss
-%define version 1.15.3
+%define version 20150622
 %define release 2
 %define httpuser apache
 
@@ -12,7 +12,7 @@
 Summary: Web based RSS reader
 Name: %{name}
 Version: %{version}
-Release: %{release}.ns6
+Release: %{release}%{?dist}
 License: GPLv3
 URL: http://tt-rss.org/redmine/wiki/tt-rss/
 Group: Applications/Internet
