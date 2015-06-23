@@ -1,6 +1,6 @@
 %define name tt-rss
-%define version 20150622
-%define release 2
+%define version 20150623
+%define release 1
 %define httpuser apache
 
 %if 0%{?fedora} >= 11 || 0%{?rhel} >= 5
@@ -145,6 +145,9 @@ fi
 
 
 %changelog
+* Tue Jun 23 2015 stephane de Labrusse <stephdl@de-labrusse.fr> 20150623-1.sme
+- new git version of the day 20150623
+
 * Sat Mar 7 2015 Stephane de Labrusse <stephdl@de-labrusse.fr> 1.15.3-2
 - First release by stephdl
 
