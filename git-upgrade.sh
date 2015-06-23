@@ -11,6 +11,6 @@ release=$(grep -sri 'define release' *.spec | sed 's/%define release //gI')
 sed -i "/%define version/c %define version $DATE" *.spec
 sed -i "/changelog/a * $(LC_ALL=C date +"%a %b %d %Y") stephane de Labrusse <stephdl@de-labrusse.fr> $DATE-$release.sme\n- new git version of the day $DATE\n" *.spec
 echo ""
-echo "Verify in if all is well, then commit the changes"
-echo "    git commit -m '* $(LC_ALL=C date +"%a %b %d %Y") stephane de Labrusse <stephdl@de-labrusse.fr> $DATE-$release - new git version of the day $DATE'"
-echo ""
+echo " Verify if all is well, then commit the changes"
+echo " git add . ; git commit -m '* $(LC_ALL=C date +"%a %b %d %Y") stephane de Labrusse <stephdl@de-labrusse.fr> $DATE-$release - new git version of the day $DATE'"
+echo " git push --tags origin branchname"
