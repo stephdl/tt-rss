@@ -1,5 +1,5 @@
 %define name tt-rss
-%define version 20150623
+%define version 20150711
 %define release 1
 %define httpuser apache
 
@@ -145,6 +145,9 @@ fi
 
 
 %changelog
+* Sat Jul 11 2015 stephane de Labrusse <stephdl@de-labrusse.fr> 20150711-1.sme
+- new git version of the day 20150711
+
 * Tue Jun 23 2015 stephane de Labrusse <stephdl@de-labrusse.fr> 20150623-1.sme
 - new git version of the day 20150623
 
