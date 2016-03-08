@@ -1,5 +1,5 @@
 %define name tt-rss
-%define version 20160308-git9232283
+%define version 20160308.git9232283
 %define release 1
 %define httpuser apache
 
@@ -145,7 +145,7 @@ fi
 
 
 %changelog
-* Tue Mar 08 2016 stephane de Labrusse <stephdl@de-labrusse.fr> 20160308-git9232283-1
+* Tue Mar 08 2016 stephane de Labrusse <stephdl@de-labrusse.fr> 20160308.git9232283-1
 - new git version of the day 20160308
 
 * Tue Jun 23 2015 stephane de Labrusse <stephdl@de-labrusse.fr> 20150623-1.sme
