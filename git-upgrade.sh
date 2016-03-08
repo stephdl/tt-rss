@@ -7,10 +7,10 @@ COMMIT=$(git log -n 1 --pretty=format:"%h")
 cd ../
 
 rm Tiny-Tiny-RSS-$DATE/.git -rf
-mv Tiny-Tiny-RSS-$DATE Tiny-Tiny-RSS-$DATE-git$COMMIT
-tar cvzf tt-rss-$DATE-git$COMMIT.tar.gz Tiny-Tiny-RSS-$DATE-git$COMMIT
+mv Tiny-Tiny-RSS-$DATE Tiny-Tiny-RSS-$DATE.git$COMMIT
+tar cvzf tt-rss-$DATE.git$COMMIT.tar.gz Tiny-Tiny-RSS-$DATE.git$COMMIT
 
-rm -rf Tiny-Tiny-RSS-$DATE-git$COMMIT
+rm -rf Tiny-Tiny-RSS-$DATE.git$COMMIT
 #sed work
 #version=$(grep -sri 'define version' *.spec | sed 's/%define version //gI')
 release=$(grep -sri 'define release' *.spec | sed 's/%define release //gI')
