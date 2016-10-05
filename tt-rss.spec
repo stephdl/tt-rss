@@ -1,5 +1,5 @@
 %define name tt-rss
-%define version 20160309.git9232283
+%define version 20161005.git6687cb9
 %define release 1
 %define httpuser apache
 
@@ -145,6 +145,9 @@ fi
 
 
 %changelog
+* Wed Oct 10 2016 stephane de Labrusse <stephdl@de-labrusse.fr> 20161005.git6687cb9-1
+- new git version of the day, only NS7 20161005
+
 * Wed Mar 09 2016 stephane de Labrusse <stephdl@de-labrusse.fr> 20160309.git9232283-1
 - new git version of the day 20160309
 
