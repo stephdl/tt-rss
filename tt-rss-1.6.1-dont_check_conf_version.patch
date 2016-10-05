@@ -1,8 +1,8 @@
-diff -Nur -x '*.orig' -x '*.rej' tt-rss-1.6.1/include/sanity_check.php mezzanine_patched_tt-rss-1.6.1/include/sanity_check.php
---- tt-rss-1.6.1/include/sanity_check.php	2012-11-14 21:45:12.420295677 +0100
-+++ mezzanine_patched_tt-rss-1.6.1/include/sanity_check.php	2012-11-14 21:44:58.202033947 +0100
-@@ -20,10 +20,6 @@
- 				array_push($errors, "PHP version 5.3.0 or newer required.");
+diff -Nur Tiny-Tiny-RSS-20161005.git6687cb9.old/include/sanity_check.php Tiny-Tiny-RSS-20161005.git6687cb9.new/include/sanity_check.php
+--- Tiny-Tiny-RSS-20161005.git6687cb9.old/include/sanity_check.php	2016-10-05 23:25:33.000000000 +0200
++++ Tiny-Tiny-RSS-20161005.git6687cb9.new/include/sanity_check.php	2016-10-05 23:45:04.626231133 +0200
+@@ -47,10 +47,6 @@
+ 				array_push($errors, "PHP version 5.4.0 or newer required.");
  			}
  
 -			if (CONFIG_VERSION != EXPECTED_CONFIG_VERSION) {
