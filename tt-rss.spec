@@ -37,7 +37,7 @@ aggregator, designed to allow you to read news from any location,
 while feeling as close to a real desktop application as possible.
 
 %prep
-%setup -q -n %{name}-%{version}
+%setup -q -n Tiny-Tiny-RSS-%{version}
 
 #%patch0 -p1
 
