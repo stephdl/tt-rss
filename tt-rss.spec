@@ -21,7 +21,7 @@ Source1: httpd.conf
 Source2: cron
 Source3: logrotate.conf
 
-Patch0: tt-rss-1.6.1-dont_check_conf_version.patch
+#Patch0: tt-rss-1.6.1-dont_check_conf_version.patch
 
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}
@@ -39,7 +39,7 @@ while feeling as close to a real desktop application as possible.
 %prep
 %setup -q -n %{name}-%{version}
 
-%patch0 -p1
+#%patch0 -p1
 
 %build
 # empty build
