@@ -37,9 +37,9 @@ aggregator, designed to allow you to read news from any location,
 while feeling as close to a real desktop application as possible.
 
 %prep
-%setup -q -n Tiny-Tiny-RSS-%{version}
+%setup -q -n tt-rss-%{version}
 
-%patch0 -p1
+#%patch0 -p1
 
 %build
 # empty build
@@ -145,6 +145,9 @@ fi
 
 
 %changelog
+* Wed Sep 05 2018 stephane de Labrusse <stephdl@de-labrusse.fr> 20180905.git62d0060a-1
+- new git version of the day 20180905
+
 * Wed Sep 05 2018 stephane de Labrusse <stephdl@de-labrusse.fr> 20180905.git62d0060a-1
 - new git version of the day 20180905
 
