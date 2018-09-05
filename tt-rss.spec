@@ -1,5 +1,5 @@
 %define name tt-rss
-%define version 20180526.gitb037ffd6
+%define version 20180905.git62d0060a
 %define release 1
 %define httpuser apache
 
@@ -145,6 +145,9 @@ fi
 
 
 %changelog
+* Wed Sep 05 2018 stephane de Labrusse <stephdl@de-labrusse.fr> 20180905.git62d0060a-1
+- new git version of the day 20180905
+
 * Sat May 26 2018 stephane de Labrusse <stephdl@de-labrusse.fr> 20180526.gitb037ffd6-1
 - new git version of the day 20180526
 
