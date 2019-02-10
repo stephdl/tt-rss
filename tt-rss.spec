@@ -1,5 +1,5 @@
 %define name Tiny-Tiny-RSS
-%define version 20180922.gitdf0115fc
+%define version 20190210.git874a2d21
 %define release 1
 %define httpuser apache
 
@@ -145,6 +145,9 @@ fi
 
 
 %changelog
+* Sun Feb 10 2019 stephane de Labrusse <stephdl@de-labrusse.fr> 20190210.git874a2d21-1
+- new git version of the day 20190210
+
 * Sat Sep 22 2018 stephane de Labrusse <stephdl@de-labrusse.fr> 20180922.gitdf0115fc-1
 - new git version of the day 20180922
 
