@@ -1,5 +1,5 @@
 %define name tt-rss
-%define version 20190211.git874a2d21
+%define version 20190211
 %define release 1
 %define httpuser apache
 
@@ -16,7 +16,7 @@ Release: %{release}%{?dist}
 License: GPLv3
 URL: http://tt-rss.org/redmine/wiki/tt-rss/
 Group: Applications/Internet
-Source: Tiny-Tiny-RSS-%{version}.tar.gz
+Source: %{name}-%{version}.tar.gz
 Source1: httpd.conf
 Source2: cron
 Source3: logrotate.conf
