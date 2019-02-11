@@ -37,7 +37,7 @@ aggregator, designed to allow you to read news from any location,
 while feeling as close to a real desktop application as possible.
 
 %prep
-%setup -q -n tt-rss
+#%setup -q -n tt-rss
 
 #%patch0 -p1
 
@@ -45,13 +45,22 @@ while feeling as close to a real desktop application as possible.
 # empty build
 
 %install
-%{__rm} -rf $RPM_BUILD_ROOT
-%{__mkdir} -p %{buildroot}/%{_datadir}/%{name}
-for a in $(find ./ -mindepth 1 -maxdepth 1 -type d -print); do
-    cp -r $a %{buildroot}/%{_datadir}/%{name}/
-done
-cp {*.php,*.xsl} %{buildroot}/%{_datadir}/%{name}/
-%{__rm} -rf .buildpath .gitignore .project
+rm -rf $RPM_BUILD_ROOT
+(cd root   ; find . -depth -print | cpio -dump $RPM_BUILD_ROOT)
+rm -f %{name}-%{version}-filelist
+/sbin/e-smith/genfilelist $RPM_BUILD_ROOT > %{name}-%{version}-filelist
+#echo "%doc COPYING" >> %{name}-%{version}-filelist
+
+
+
+
+#%{__rm} -rf $RPM_BUILD_ROOT
+#%{__mkdir} -p %{buildroot}/%{_datadir}/%{name}
+#for a in $(find ./ -mindepth 1 -maxdepth 1 -type d -print); do
+#    cp -r $a %{buildroot}/%{_datadir}/%{name}/
+#done
+#cp {*.php,*.xsl} %{buildroot}/%{_datadir}/%{name}/
+#%{__rm} -rf .buildpath .gitignore .project
 
 # rename icons to rssicons so it won't clash with the global icons directory
 %{__mv} %{buildroot}/%{_datadir}/%{name}/feed-icons %{buildroot}/%{_datadir}/%{name}/rssicons
