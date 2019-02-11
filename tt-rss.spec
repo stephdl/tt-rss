@@ -1,5 +1,5 @@
 %define name tt-rss
-%define version 20190210.git874a2d21
+%define version 20190211.git874a2d21
 %define release 1
 %define httpuser apache
 
@@ -145,6 +145,9 @@ fi
 
 
 %changelog
+* Mon Feb 11 2019 stephane de Labrusse <stephdl@de-labrusse.fr> 20190211.git874a2d21-1
+- new git version of the day 20190211
+
 * Sun Feb 10 2019 stephane de Labrusse <stephdl@de-labrusse.fr> 20190210.git874a2d21-1
 - new git version of the day 20190210
 
