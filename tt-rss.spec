@@ -1,4 +1,4 @@
-%define name Tiny-Tiny-RSS
+%define name tt-rss
 %define version 20190210.git874a2d21
 %define release 1
 %define httpuser apache
@@ -16,7 +16,7 @@ Release: %{release}%{?dist}
 License: GPLv3
 URL: http://tt-rss.org/redmine/wiki/tt-rss/
 Group: Applications/Internet
-Source: %{name}-%{version}.tar.gz
+Source: Tiny-Tiny-RSS-%{version}.tar.gz
 Source1: httpd.conf
 Source2: cron
 Source3: logrotate.conf
@@ -37,7 +37,7 @@ aggregator, designed to allow you to read news from any location,
 while feeling as close to a real desktop application as possible.
 
 %prep
-%setup -q -n Tiny-Tiny-RSS-%{version}
+%setup -q -n tt-rss
 
 #%patch0 -p1
 
